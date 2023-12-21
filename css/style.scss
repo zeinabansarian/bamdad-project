@@ -250,3 +250,91 @@ header{
         }
     }
 }
+footer{
+    background-color: black;
+    padding: 27px 90px 20px 90px;
+    
+    .footerDetails{
+        direction: rtl;
+        column-gap: 90px;
+        display: flex;
+        align-items: baseline;
+        position: relative;
+        h3{
+            font-family: "IRANSans";
+            font-size: 16px;
+            font-weight: 300;
+            color: #0081B3;
+            line-height: 24px;
+            white-space: nowrap;
+            margin-bottom: 12px;
+        }
+        h3:last-of-type{
+            margin-top: 12px;
+        }
+        p{
+            font-family: "IRANSans";
+            line-height: 24px;
+            color: white;
+            font-size: 14px;
+            font-weight: 200;
+        }
+        .bestSelling{
+            a{
+                font-family: "IRANSans";
+                line-height: 24px;
+                color: white;
+                font-size: 14px;
+                font-weight: 300;
+                text-decoration: none;
+                display: block;
+            }
+        }
+        .socialBtns{
+            display: flex;
+            column-gap: 15px;
+            a{
+                background-color: white;
+                border-radius: 50%;
+                padding: 4px 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    .footerDetails::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #535353;
+        bottom: -35px;
+    }
+    .copyRight{
+        display: flex;
+        justify-content: space-between;
+        direction: rtl;
+        margin-top: 59px;
+        .namaSite{
+            display: flex;
+            align-items: center;
+            h5{
+                font-family: "IRANSans";
+                font-weight: 200;
+                color: #F8F7F7;
+                font-size: 12px;
+                margin-left: 5px;
+            }
+        }
+        .copyTxt{
+            h4{
+                font-family: "IRANSans";
+                font-weight: 200;
+                color: #F8F7F7;
+                font-size: 14px;
+
+            }
+        }
+    }
+}
