@@ -207,7 +207,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 28px 90px;
-  position: fixed;
+  position: absolute;
   width: -webkit-fill-available;
   z-index: 1000;
 }
@@ -492,6 +492,8 @@ footer .copyRight .copyTxt h4 {
   position: relative;
   height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .productCat .productCat-container .productCatItem .catItemTitle {
   position: absolute;
