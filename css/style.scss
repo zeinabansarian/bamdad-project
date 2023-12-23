@@ -715,6 +715,7 @@ footer {
 }
 
 .article {
+    overflow-x: hidden;
   .section2 {
     display: flex;
     flex-direction: column;
@@ -871,17 +872,16 @@ footer {
     padding: 40px 60px;
     .relatedProTitle {
       text-align: right;
+      position: relative;
       h4 {
         font-family: "Anjoman";
         font-weight: 400;
         text-align: right;
-        position: relative;
         strong {
           font-weight: 700;
         }
       }
-      h4::after {
-        content: "";
+      span {
         position: absolute;
         right: 0;
         bottom: -21px;
@@ -922,17 +922,18 @@ footer {
     padding: 40px 89px 74px 89px;
     .relatedBlogsTitle {
         text-align: right;
+        position: relative;
         h4 {
           font-family: "Anjoman";
           font-weight: 400;
           text-align: right;
-          position: relative;
           strong {
             font-weight: 700;
           }
         }
-        h4::after {
-          content: "";
+
+        span {
+
           position: absolute;
           right: 0;
           bottom: -21px;
@@ -985,14 +986,17 @@ footer {
             }
             .RelatedBlogDetail{
                 position: relative;
-
-                h6{
-                    direction: rtl;
-                    font-family: "IranSansFaNum";
-                    font-size: 14px;
-                    font-weight: 500;
-                    line-height: 21px;
-                    padding: 12px 0 20px 0;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    h6{
+                        direction: rtl;
+                        font-family: "IranSansFaNum";
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 21px;
+                        padding: 12px 0 20px 0;
+                    }
                 }
                 p{
                     text-align: right;
@@ -1005,5 +1009,36 @@ footer {
             }
         }
       }
+  }
+  .loadingTop{
+    transform: translateY(30%);
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+.loadedTop{
+      transform: translateY(0);
+      opacity: 1;
+      transition: 0.5s ease-in;
+
+  }
+  .loadingRight{
+    transform: translateX(15%);
+    opacity: 0;
+    transition: 0.5s ease-in;
+  }
+  .loadedRight{
+    transform: translateX(0);
+    opacity: 1;
+    transition: 0.5s ease-in;
+  }
+  .loadingLeft{
+    transform: translateX(-15%);
+    opacity: 0;
+    transition: 0.5s ease-in;
+  }
+  .loadedLeft{
+    transform: translateX(0);
+    opacity: 1;
+    transition: 0.5s ease-in;
   }
 }

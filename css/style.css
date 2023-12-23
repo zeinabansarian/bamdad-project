@@ -563,6 +563,9 @@ footer .copyRight .copyTxt h4 {
   bottom: 0;
 }
 
+.article {
+  overflow-x: hidden;
+}
 .article .section2 {
   display: flex;
   flex-direction: column;
@@ -715,18 +718,17 @@ footer .copyRight .copyTxt h4 {
 }
 .article .section8 .relatedProTitle {
   text-align: right;
+  position: relative;
 }
 .article .section8 .relatedProTitle h4 {
   font-family: "Anjoman";
   font-weight: 400;
   text-align: right;
-  position: relative;
 }
 .article .section8 .relatedProTitle h4 strong {
   font-weight: 700;
 }
-.article .section8 .relatedProTitle h4::after {
-  content: "";
+.article .section8 .relatedProTitle span {
   position: absolute;
   right: 0;
   bottom: -21px;
@@ -763,18 +765,17 @@ footer .copyRight .copyTxt h4 {
 }
 .article .section9 .relatedBlogsTitle {
   text-align: right;
+  position: relative;
 }
 .article .section9 .relatedBlogsTitle h4 {
   font-family: "Anjoman";
   font-weight: 400;
   text-align: right;
-  position: relative;
 }
 .article .section9 .relatedBlogsTitle h4 strong {
   font-weight: 700;
 }
-.article .section9 .relatedBlogsTitle h4::after {
-  content: "";
+.article .section9 .relatedBlogsTitle span {
   position: absolute;
   right: 0;
   bottom: -21px;
@@ -825,7 +826,11 @@ footer .copyRight .copyTxt h4 {
 .article .section9 .relatedBlogs .blogItem .RelatedBlogDetail {
   position: relative;
 }
-.article .section9 .relatedBlogs .blogItem .RelatedBlogDetail h6 {
+.article .section9 .relatedBlogs .blogItem .RelatedBlogDetail a {
+  text-decoration: none;
+  color: black;
+}
+.article .section9 .relatedBlogs .blogItem .RelatedBlogDetail a h6 {
   direction: rtl;
   font-family: "IranSansFaNum";
   font-size: 14px;
@@ -840,4 +845,34 @@ footer .copyRight .copyTxt h4 {
   font-weight: 300;
   width: 330px;
   line-height: 17px;
+}
+.article .loadingTop {
+  transform: translateY(30%);
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+.article .loadedTop {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
+.article .loadingRight {
+  transform: translateX(15%);
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+.article .loadedRight {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
+.article .loadingLeft {
+  transform: translateX(-15%);
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+.article .loadedLeft {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 0.5s ease-in;
 }/*# sourceMappingURL=style.css.map */
