@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,8 +88,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -29,16 +106,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -52,6 +133,7 @@ table {
   font-family: "IRANSans";
   font-style: normal;
   font-weight: 900;
+  font-display: swap;
   src: url("../fonts/iransans/eot/IRANSansWeb(FaNum)_Black.eot");
   src: url("../fonts/iransans/eot/IRANSansWeb(FaNum)_Black.eot?#iefix") format("embedded-opentype"), url("../fonts/iransans/woff2/IRANSansWeb(FaNum)_Black.woff2") format("woff2"), url("../fonts/iransans/woff/IRANSansWeb(FaNum)_Black.woff") format("woff"), url("../fonts/iransans/ttf/IRANSansWeb(FaNum)_Black.ttf") format("truetype");
 }
@@ -60,6 +142,7 @@ table {
   font-style: normal;
   font-weight: bold;
   font-weight: 700;
+  font-display: swap;
   src: url("../fonts/iransans/eot/IRANSansWeb(FaNum)_Bold.eot");
   src: url("../fonts/iransans/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/iransans/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"), url("../fonts/iransans/woff/IRANSansWeb(FaNum)_Bold.woff") format("woff"), url("../fonts/iransans/ttf/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
 }
@@ -67,6 +150,7 @@ table {
   font-family: "IRANSans";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("../fonts/iransans/eot/IRANSansWeb(FaNum)_Medium.eot");
   src: url("../fonts/iransans/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/iransans/woff2/IRANSansWeb(FaNum)_Medium.woff2") format("woff2"), url("../fonts/iransans/woff/IRANSansWeb(FaNum)_Medium.woff") format("woff"), url("../fonts/iransans/ttf/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
 }
@@ -74,11 +158,13 @@ table {
   font-family: "IRANSans";
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
   src: url("../fonts/iransans/eot/IRANSansWeb(FaNum).eot");
   src: url("../fonts/iransans/eot/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"), url("../fonts/iransans/woff2/IRANSansWeb(FaNum).woff2") format("woff2"), url("../fonts/iransans/woff/IRANSansWeb(FaNum).woff") format("woff"), url("../fonts/iransans/ttf/IRANSansWeb(FaNum).ttf") format("truetype");
 }
 @font-face {
   font-family: "IRANSans";
+  font-display: swap;
   font-style: normal;
   font-weight: 200;
   src: url("../fonts/iransans/eot/IRANSansWeb(FaNum)_Light.eot");
@@ -87,9 +173,34 @@ table {
 @font-face {
   font-family: "IRANSans";
   font-style: normal;
+  font-display: swap;
   font-weight: 100;
   src: url("../fonts/iransans/eot/IRANSansWeb(FaNum)_UltraLight.eot");
   src: url("../fonts/iransans/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/iransans/woff2/IRANSansWeb(FaNum)_UltraLight.woff2") format("woff2"), url("../fonts/iransans/woff/IRANSansWeb(FaNum)_UltraLight.woff") format("woff"), url("../fonts/iransans/ttf/IRANSansWeb(FaNum)_UltraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Anjoman";
+  src: url("./../fonts/anjoman/Bold/bold.eot");
+  src: url("./../fonts/anjoman/Bold/bold.eot?#iefix") format("embedded-opentype"), url("./../fonts/anjoman/Bold/bold.woff") format("woff"), url("./../fonts/anjoman/Bold/bold.woff2") format("woff2"), url("./../fonts/anjoman/Bold/bold.ttf") format("truetype"), url("./../fonts/anjoman/Bold/bold.svg#Anjoman Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anjoman";
+  src: url("../fonts/anjoman/Regular/Regular.eot");
+  src: url("../fonts/anjoman/Regular/Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/anjoman/Regular/Regular.woff") format("woff"), url("../fonts/anjoman/Regular/Regular.woff2") format("woff2"), url("../fonts/anjoman/Regular/Regular.ttf") format("truetype"), url("../fonts/anjoman/Regular/Regular.svg#Anjoman Regular") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anjoman";
+  src: url("../fonts/anjoman/Light/Light.eot");
+  src: url("../fonts/anjoman/Light/Light.eot?#iefix") format("embedded-opentype"), url("../fonts/anjoman/Light/Light.woff") format("woff"), url("../fonts/anjoman/Light/Light.woff2") format("woff2"), url("../fonts/anjoman/Light/Light.ttf") format("truetype"), url("../fonts/anjoman/Light/Light.svg#Anjoman Light") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
 }
 header {
   display: flex;
@@ -98,6 +209,7 @@ header {
   padding: 28px 90px;
   position: fixed;
   width: -webkit-fill-available;
+  z-index: 1000;
 }
 header .menu-items {
   display: flex;
@@ -311,4 +423,97 @@ footer .copyRight .copyTxt h4 {
   font-weight: 200;
   color: #F8F7F7;
   font-size: 14px;
+}
+
+.productCat .banner {
+  position: relative;
+}
+.productCat .banner img {
+  width: 100%;
+}
+.productCat .banner .catTitle {
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productCat .banner .catTitle h1 {
+  color: white;
+  font-family: "Anjoman";
+  font-weight: 700;
+  font-size: 32px;
+}
+.productCat .banner::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(0deg, rgba(249, 249, 249, 0) 61%, rgba(0, 0, 0, 0.6446953782) 100%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.productCat .productCat-container {
+  padding: 100px 147px 100px 154px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+.productCat .productCat-container .grid {
+  display: grid;
+  justify-content: center;
+  grid-gap: 40px;
+  grid-template-areas: "item1 item2" "item1 item3";
+}
+.productCat .productCat-container .grid .productCatItem:nth-child(1) {
+  grid-area: item1;
+}
+.productCat .productCat-container .grid .productCatItem:nth-child(2) {
+  grid-area: item2;
+}
+.productCat .productCat-container .grid .productCatItem:nth-child(3) {
+  grid-area: item3;
+}
+.productCat .productCat-container .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.productCat .productCat-container .productCatItem {
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.productCat .productCat-container .productCatItem .catItemTitle {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  z-index: 10;
+  text-align: center;
+}
+.productCat .productCat-container .productCatItem .catItemTitle h3 {
+  font-family: "IRANSans";
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+.productCat .productCat-container .productCatItem::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(180deg, rgba(249, 249, 249, 0) 50%, rgba(0, 0, 0, 0.8) 100%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */
