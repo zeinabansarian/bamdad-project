@@ -849,32 +849,38 @@ footer .copyRight .copyTxt h4 {
   width: 330px;
   line-height: 17px;
 }
-.article .loadingTop {
+
+.loadingTop {
   transform: translateY(30%);
   opacity: 0;
   transition: 0.5s ease-in;
 }
-.article .loadedTop {
+
+.loadedTop {
   transform: translateY(0);
   opacity: 1;
   transition: 0.5s ease-in;
 }
-.article .loadingRight {
-  transform: translateX(15%);
+
+.loadingRight {
+  transform: translateX(45%);
   opacity: 0;
   transition: 0.5s ease-in;
 }
-.article .loadedRight {
+
+.loadedRight {
   transform: translateX(0);
   opacity: 1;
   transition: 0.5s ease-in;
 }
-.article .loadingLeft {
-  transform: translateX(-15%);
+
+.loadingLeft {
+  transform: translateX(-45%);
   opacity: 0;
   transition: 0.5s ease-in;
 }
-.article .loadedLeft {
+
+.loadedLeft {
   transform: translateX(0);
   opacity: 1;
   transition: 0.5s ease-in;
@@ -906,6 +912,9 @@ footer .copyRight .copyTxt h4 {
   color: black;
 }
 
+.about-us {
+  overflow-x: hidden;
+}
 .about-us .section1 {
   display: flex;
   direction: rtl;
@@ -970,6 +979,9 @@ footer .copyRight .copyTxt h4 {
   height: 2px;
   width: 50px;
 }
+.about-us .section2 .message p:first-of-type {
+  margin: 33px 0;
+}
 .about-us .section2 .message p {
   font-family: "IRANSans";
   font-weight: 400;
@@ -978,7 +990,6 @@ footer .copyRight .copyTxt h4 {
   text-align: justify;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 33px 0;
 }
 .about-us .section2 .message h4 {
   font-family: "IRANSans";

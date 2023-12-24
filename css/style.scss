@@ -1009,38 +1009,38 @@ footer {
       }
     }
   }
-  .loadingTop {
-    transform: translateY(30%);
-    opacity: 0;
-    transition: 0.5s ease-in;
-  }
-  .loadedTop {
-    transform: translateY(0);
-    opacity: 1;
-    transition: 0.5s ease-in;
-  }
-  .loadingRight {
-    transform: translateX(15%);
-    opacity: 0;
-    transition: 0.5s ease-in;
-  }
-  .loadedRight {
-    transform: translateX(0);
-    opacity: 1;
-    transition: 0.5s ease-in;
-  }
-  .loadingLeft {
-    transform: translateX(-15%);
-    opacity: 0;
-    transition: 0.5s ease-in;
-  }
-  .loadedLeft {
-    transform: translateX(0);
-    opacity: 1;
-    transition: 0.5s ease-in;
-  }
-}
 
+}
+.loadingTop {
+  transform: translateY(30%);
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+.loadedTop {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
+.loadingRight {
+  transform: translateX(45%);
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+.loadedRight {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
+.loadingLeft {
+  transform: translateX(-45%);
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+.loadedLeft {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
 .productList {
   .productListContainer {
     padding: 100px 90px;
@@ -1072,6 +1072,7 @@ footer {
 }
 
 .about-us {
+  overflow-x: hidden;
   .section1 {
     display: flex;
     direction: rtl;
@@ -1134,6 +1135,10 @@ footer {
           width: 50px;
         }
       }
+      p:first-of-type{
+        margin: 33px 0;
+
+      }
       p{
         font-family: "IRANSans";
         font-weight: 400;
@@ -1141,8 +1146,8 @@ footer {
         line-height: 24px;
         text-align: justify;
         width: fit-content;
-        margin: 33px 0;
       }
+
       h4{
         
         font-family: "IRANSans";
