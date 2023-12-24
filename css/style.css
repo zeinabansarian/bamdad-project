@@ -1055,6 +1055,42 @@ footer .copyRight .copyTxt h4 {
   margin-top: 8px;
 }
 
+.contactUs .contactContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 90px 120px;
+}
+.contactUs .contactContainer .contactDetail {
+  text-align: right;
+}
+.contactUs .contactContainer .contactDetail h2 {
+  font-size: 18px;
+  line-height: 29.74px;
+  font-weight: 700;
+  font-family: "IranSansFaNum";
+}
+.contactUs .contactContainer .contactDetail h3 {
+  font-family: "IRANSans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  direction: rtl;
+  margin-top: 18px;
+}
+.contactUs .contactContainer .contactDetail p {
+  font-family: "IRANSans";
+  line-height: 21px;
+  margin-top: 6px;
+  font-weight: 300;
+  font-size: 14px;
+}
+.contactUs .contactContainer .contactDetail .socialBtns {
+  margin-top: 18px;
+  display: flex;
+  direction: rtl;
+  gap: 8px;
+}
+
 @media only screen and (max-width: 1290px) {
   .productList .productListContainer .proListItem {
     width: 30%;
@@ -1064,5 +1100,9 @@ footer .copyRight .copyTxt h4 {
   }
   .productList .productListContainer .proListItem .proImg img {
     width: -webkit-fill-available;
+  }
+  .contactUs .contactContainer iframe {
+    width: 500px;
+    height: 400px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -498,7 +498,6 @@ header {
     }
   }
 }
-
 footer {
   background-color: black;
   padding: 27px 90px 20px 90px;
@@ -597,7 +596,6 @@ footer {
     }
   }
 }
-
 .productCat {
   .productCat-container {
     padding: 100px 147px 100px 154px;
@@ -671,7 +669,6 @@ footer {
     }
   }
 }
-
 .banner {
   position: relative;
   width: 100%;
@@ -698,7 +695,6 @@ footer {
     }
   }
 }
-
 .banner::after {
   position: absolute;
   content: "";
@@ -714,7 +710,6 @@ footer {
   right: 0;
   bottom: 0;
 }
-
 .article {
   overflow-x: hidden;
   .section2 {
@@ -1070,7 +1065,6 @@ footer {
     }
   }
 }
-
 .about-us {
   overflow-x: hidden;
   .section1 {
@@ -1218,6 +1212,45 @@ footer {
 
   }
 }
+.contactUs{
+  .contactContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 120px;
+
+    .contactDetail{
+      text-align: right;
+      h2{
+        font-size: 18px;
+        line-height: 29.74px;
+        font-weight: 700;
+        font-family: "IranSansFaNum";
+
+      }
+      h3{
+        font-family:"IRANSans" ;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        direction: rtl;
+        margin-top: 18px;
+      }
+      p{
+        font-family:"IRANSans" ;
+        line-height: 21px;
+        margin-top: 6px;
+        font-weight: 300;
+        font-size: 14px;
+      }
+      .socialBtns{
+        margin-top: 18px;
+        display: flex;
+        direction: rtl;
+        gap: 8px;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 1290px) {
   .productList {
     .productListContainer {
@@ -1230,6 +1263,15 @@ footer {
           }
         }
       }
+    }
+  }
+  .contactUs{
+    .contactContainer{
+        iframe{
+          width: 500px;
+          height: 400px;
+        }
+      
     }
   }
 }
