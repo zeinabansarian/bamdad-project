@@ -531,6 +531,7 @@ footer .copyRight .copyTxt h4 {
 }
 .banner img {
   width: 100%;
+  filter: brightness(0.5);
 }
 .banner .catTitle {
   position: absolute;
@@ -711,7 +712,7 @@ footer .copyRight .copyTxt h4 {
   bottom: -54px;
   right: 0;
   height: 2px;
-  background-color: #E9E9E9;
+  background-color: #e9e9e9;
 }
 .article .section8 {
   padding: 40px 60px;
@@ -724,6 +725,7 @@ footer .copyRight .copyTxt h4 {
   font-family: "Anjoman";
   font-weight: 400;
   text-align: right;
+  font-size: 18px;
 }
 .article .section8 .relatedProTitle h4 strong {
   font-weight: 700;
@@ -751,7 +753,7 @@ footer .copyRight .copyTxt h4 {
 }
 .article .section8 .relatedProducts .proItem a img {
   padding: 17px 39.44px 27.47px 29.75px;
-  border: 1px solid #E9E9E9;
+  border: 1px solid #e9e9e9;
 }
 .article .section8 .relatedProducts .proItem a span {
   margin-top: 18.5px;
@@ -770,6 +772,7 @@ footer .copyRight .copyTxt h4 {
 .article .section9 .relatedBlogsTitle h4 {
   font-family: "Anjoman";
   font-weight: 400;
+  font-size: 18px;
   text-align: right;
 }
 .article .section9 .relatedBlogsTitle h4 strong {
@@ -892,7 +895,7 @@ footer .copyRight .copyTxt h4 {
 }
 .productList .productListContainer .proListItem .proImg {
   padding: 17px 39.5px 27.5px 29.5px;
-  border: 1px solid #E9E9E9;
+  border: 1px solid #e9e9e9;
 }
 .productList .productListContainer .proListItem .proItemTitle a {
   font-size: 14px;
@@ -901,6 +904,144 @@ footer .copyRight .copyTxt h4 {
   font-family: "IRANSans";
   font-weight: 400;
   color: black;
+}
+
+.about-us .section1 {
+  display: flex;
+  direction: rtl;
+  padding: 100px 90px;
+}
+.about-us .section1 .imgSec {
+  width: -moz-min-content;
+  width: min-content;
+}
+.about-us .section1 .imgSec p {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 36px;
+  font-size: 14px;
+  font-family: "IRANSans";
+  font-weight: 400;
+  text-align: justify;
+  line-height: 21px;
+}
+.about-us .section1 h2 {
+  width: -webkit-fill-available;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Anjoman";
+  font-weight: 700;
+  line-height: 62.76px;
+  padding-left: 50px;
+  margin-top: 171px;
+}
+.about-us .section2 {
+  display: flex;
+  position: relative;
+  margin: 110px 0;
+}
+.about-us .section2 .message {
+  position: absolute;
+  z-index: 1;
+  top: -90px;
+  width: 35%;
+  right: 0;
+  background-color: #F5F5F5;
+  padding: 181px 90px 114px 215px;
+}
+.about-us .section2 .message .mTitle {
+  text-align: right;
+  position: relative;
+}
+.about-us .section2 .message .mTitle h4 {
+  font-family: "Anjoman";
+  font-weight: 400;
+  font-size: 18px;
+  text-align: right;
+}
+.about-us .section2 .message .mTitle h4 strong {
+  font-weight: 700;
+}
+.about-us .section2 .message .mTitle span {
+  position: absolute;
+  right: 0;
+  bottom: -21px;
+  background-color: #0081b3;
+  height: 2px;
+  width: 50px;
+}
+.about-us .section2 .message p {
+  font-family: "IRANSans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: justify;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 33px 0;
+}
+.about-us .section2 .message h4 {
+  font-family: "IRANSans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+}
+.about-us .section2 .services {
+  position: relative;
+  z-index: 10;
+  direction: rtl;
+}
+.about-us .section2 .services img {
+  filter: brightness(0.3) sepia(90%) blur(2px) hue-rotate(140deg) saturate(2);
+}
+.about-us .section2 .services .servicesTxt {
+  position: absolute;
+  top: 0;
+  padding: 73px 123px 130px 127px;
+}
+.about-us .section2 .services .servicesTxt .mTitle {
+  text-align: right;
+  position: relative;
+}
+.about-us .section2 .services .servicesTxt .mTitle h4 {
+  font-family: "Anjoman";
+  font-weight: 400;
+  font-size: 18px;
+  color: #C9C9C9;
+  text-align: right;
+}
+.about-us .section2 .services .servicesTxt .mTitle h4 strong {
+  color: white;
+  font-weight: 700;
+}
+.about-us .section2 .services .servicesTxt .mTitle span {
+  position: absolute;
+  right: 0;
+  bottom: -21px;
+  background-color: #0081b3;
+  height: 2px;
+  width: 50px;
+}
+.about-us .section2 .services .servicesTxt .detailServices {
+  margin-top: 52px;
+}
+.about-us .section2 .services .servicesTxt .detailServices h5 {
+  margin-top: 24px;
+  font-size: 16px;
+  color: white;
+  font-family: "IRANSans";
+  font-weight: 700;
+  line-height: 24px;
+}
+.about-us .section2 .services .servicesTxt .detailServices p {
+  font-size: 14px;
+  color: white;
+  font-family: "IRANSans";
+  font-weight: 100;
+  line-height: 21px;
+  text-align: justify;
+  margin-top: 8px;
 }
 
 @media only screen and (max-width: 1290px) {
