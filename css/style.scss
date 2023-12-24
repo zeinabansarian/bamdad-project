@@ -1042,3 +1042,49 @@ footer {
     transition: 0.5s ease-in;
   }
 }
+
+.productList{
+  .productListContainer{
+    padding: 100px 90px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    .proListItem{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18.5px;
+      width: 30%;
+      .proImg{
+        padding: 17px 39.5px 27.5px 29.5px;
+        border: 1px solid #E9E9E9;
+      }
+      .proItemTitle{
+        a{
+          font-size: 14px;
+          line-height: 21px;
+          text-decoration: none;
+          font-family: "IRANSans";
+          font-weight: 400;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:1290px ){
+.productList{
+  .productListContainer{
+    .proListItem{
+      width: 30%;
+      .proImg{
+        width: 65%;
+        img{
+          width: -webkit-fill-available;
+        }
+      }
+    }
+  }
+}
+}
