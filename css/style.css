@@ -955,7 +955,7 @@ footer .copyRight .copyTxt h4 {
   top: -90px;
   width: 35%;
   right: 0;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding: 181px 90px 114px 215px;
 }
 .about-us .section2 .message .mTitle {
@@ -1019,7 +1019,7 @@ footer .copyRight .copyTxt h4 {
   font-family: "Anjoman";
   font-weight: 400;
   font-size: 18px;
-  color: #C9C9C9;
+  color: #c9c9c9;
   text-align: right;
 }
 .about-us .section2 .services .servicesTxt .mTitle h4 strong {
@@ -1091,6 +1091,524 @@ footer .copyRight .copyTxt h4 {
   gap: 8px;
 }
 
+.homePage .relatedProTitle h4 {
+  font-size: 22px !important;
+}
+.homePage .slideSection {
+  height: 100vh;
+  overflow: hidden;
+}
+.homePage .slideSection .defaultSlide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.homePage .slideSection .defaultSlide img {
+  width: 100%;
+  filter: brightness(0.7);
+  transition: all 1s;
+}
+.homePage .slideSection .defaultSlide .defaultImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 1;
+  transition: 0.5s;
+  filter: brightness(0.7);
+}
+.homePage .slideSection .defaultSlide .defaultTitle {
+  position: absolute;
+  top: 40vh;
+  z-index: 100;
+}
+.homePage .slideSection .defaultSlide .defaultTitle h1 {
+  font-family: "Anjoman";
+  font-weight: 900;
+  font-size: 40px;
+  color: white;
+}
+.homePage .slideSection .sliderContainer {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homePage .slideSection .sliderContainer .categoryTitle {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 130px;
+}
+.homePage .slideSection .sliderContainer .categoryTitle h2 {
+  font-weight: 300;
+  font-size: 20px;
+  font-family: "IRANSans";
+  color: white;
+  position: relative;
+}
+.homePage .slideSection .sliderContainer .categoryTitle h2::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 40%;
+  right: 0;
+  bottom: 8px;
+  background-color: #D1D1D1;
+}
+.homePage .slideSection .sliderContainer .categoryTitle h2::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 40%;
+  left: 0;
+  bottom: 8px;
+  background-color: #D1D1D1;
+}
+.homePage .slideSection .sliderContainer .defaultSlider {
+  position: relative;
+  width: 85%;
+  height: 100%;
+}
+.homePage .slideSection .sliderContainer .home-swiper {
+  position: absolute;
+  left: 0;
+  z-index: 100;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.homePage .slideSection .sliderContainer .home-swiper .swiper-slide {
+  position: unset;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+.homePage .slideSection .sliderContainer .home-swiper .swiper-slide img {
+  width: 0;
+  height: 0;
+  transition: all 1s;
+}
+.homePage .slideSection .sliderContainer .home-swiper .swiper-slide .slideDetail {
+  position: relative;
+  bottom: 0;
+  z-index: 1000;
+  padding: 20px 36px 60px 28px;
+}
+.homePage .slideSection .sliderContainer .home-swiper .swiper-slide .slideDetail a {
+  text-decoration: none;
+  color: white;
+  direction: rtl;
+}
+.homePage .slideSection .sliderContainer .home-swiper .swiper-slide .slideDetail a h3 {
+  font-family: "IRANSans";
+  font-weight: 700;
+  line-height: 27.13px;
+  text-align: center;
+  font-size: 16px;
+}
+.homePage .slideSection .sliderContainer .home-swiper .swiper-slide .slideDetail a .slideDes {
+  height: 0;
+}
+.homePage .slideSection .sliderContainer .home-swiper .swiper-slide .slideDetail a p {
+  font-family: "IRANSans";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 23.24px;
+  text-align: justify;
+  margin: 0;
+  opacity: 0;
+  padding: 0 36px 0 28px;
+  transform-origin: bottom;
+  transform: translateY(140%);
+}
+.homePage .slideSection .sliderContainer .home-swiper .swiper-slide .slideDetail a .arrowSection {
+  position: absolute;
+  bottom: -60%;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homePage .slideSection .sliderContainer .home-swiper .swiper-slide .slideDetail a .arrowSection .arrow {
+  position: absolute;
+  bottom: -60%;
+}
+.homePage .slideSection .sliderContainer .home-swiper .swiper-slide .slideDetail:hover p {
+  margin: 28px 0 80px 0;
+  transform-origin: bottom;
+  transform: translateY(0);
+  opacity: 1;
+  transition: 0.5s;
+}
+.homePage .slideSection .sliderContainer .home-swiper .swiper-slide .slideDetail:hover .slideDes {
+  height: 100%;
+}
+.homePage .slideSection .sliderContainer .home-swiper .swiper-slide .slideDetail:hover .arrowSection {
+  bottom: 55px;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+.homePage .slideSection .sliderContainer .home-swiper .swiper-slide .slideDetail:hover .arrowSection .arrow {
+  bottom: unset;
+  transition: 1.5s;
+  transition-delay: 0.5s;
+}
+.homePage .slideSection .sliderContainer .home-swiper .swiper-slide .slideDetail:hover + .background {
+  background-color: #a07963;
+  transform: scaleY(1);
+  transition: 0.2s;
+  transform-origin: bottom;
+}
+.homePage .slideSection .sliderContainer .home-swiper .swiper-slide .background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scaleY(0);
+  left: 0;
+  bottom: 0;
+  transition: 0.2s;
+  transform-origin: bottom;
+}
+.homePage .slideSection .sliderContainer .prevArrow {
+  position: absolute;
+  left: -3%;
+  bottom: 50px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.homePage .slideSection .sliderContainer .nextArrow {
+  cursor: pointer;
+  position: absolute;
+  right: -3%;
+  bottom: 50px;
+  padding: 8px 12px;
+}
+.homePage .show {
+  z-index: 100 !important;
+  transition: 0.5s !important;
+  opacity: 1 !important;
+}
+.homePage .relatedProTitle {
+  text-align: right;
+  position: relative;
+}
+.homePage .relatedProTitle h4 {
+  font-family: "Anjoman";
+  font-weight: 400;
+  text-align: right;
+  font-size: 18px;
+}
+.homePage .relatedProTitle h4 strong {
+  font-weight: 700;
+}
+.homePage .relatedProTitle span {
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  background-color: #0081b3;
+  height: 2px;
+  width: 50px;
+}
+.homePage .aboutHome {
+  overflow-x: hidden;
+  padding: 120px 89px;
+  display: grid;
+  grid-template-areas: "a a b b" "c d b b" "c e e e";
+  gap: 55px;
+}
+.homePage .aboutHome .aboutTxt {
+  direction: rtl;
+}
+.homePage .aboutHome .aboutTxt p {
+  font-family: "IRANSans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 50px;
+  text-align: justify;
+}
+.homePage .aboutHome img {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.homePage .aboutHome .grid:nth-child(1) {
+  grid-area: a;
+}
+.homePage .aboutHome .grid:nth-child(2) {
+  grid-area: b;
+}
+.homePage .aboutHome .grid:nth-child(3) {
+  grid-area: c;
+}
+.homePage .aboutHome .grid:nth-child(4) {
+  grid-area: d;
+}
+.homePage .aboutHome .grid:nth-child(5) {
+  grid-area: e;
+}
+.homePage .homeCompetition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 34px 90px 119px 90px;
+  gap: 44px;
+}
+.homePage .homeCompetition .boxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  justify-content: center;
+}
+.homePage .homeCompetition .boxContainer .boxCompetition {
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  direction: rtl;
+  row-gap: 30px;
+  padding: 28.5px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+}
+.homePage .homeCompetition .boxContainer .boxCompetition .imgContainer {
+  background-color: rgba(124, 30, 53, 0.2509803922);
+  padding: 11.5px;
+  border-radius: 50%;
+}
+.homePage .homeCompetition .boxContainer .boxCompetition h4 {
+  font-family: "IRANSans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: justify;
+}
+.homePage .homeCompetition .boxContainer .boxCompetition p {
+  font-family: "IRANSans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: justify;
+  padding: 0 32px;
+}
+.homePage .productSlider {
+  padding: 0 90px 120px 0;
+}
+.homePage .productSlider .swiperProductSlider {
+  margin-top: 44px;
+}
+.homePage .productSlider .swiperProductSlider .productSlide .sliderBox a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  align-items: center;
+  padding: 15px;
+}
+.homePage .productSlider .swiperProductSlider .productSlide .sliderBox a h5 {
+  text-align: center;
+  font-family: "IRANSans";
+  font-weight: 400;
+  font-size: 14px;
+}
+.homePage .phone {
+  position: relative;
+  width: 100%;
+}
+.homePage .phone img {
+  filter: brightness(0.3);
+  width: 100%;
+}
+.homePage .phone .phoneCounsel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.homePage .phone .phoneCounsel h2 {
+  font-size: 20px;
+  font-family: "Anjoman";
+  font-weight: 700;
+  color: white;
+  direction: rtl;
+}
+.homePage .phone .phoneCounsel a {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: #0081b3;
+  border-radius: 80px 80px 80px 80px;
+  text-decoration: none;
+  color: white;
+  font-family: "IranSansFaNum";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 19.75px 40px;
+}
+.homePage .homeServices {
+  display: flex;
+  margin-top: 144px;
+  direction: rtl;
+  padding: 0 90px;
+  justify-content: space-between;
+}
+.homePage .homeServices .rService {
+  width: 40%;
+  padding-left: 20px;
+}
+.homePage .homeServices .rService .serviceDetail {
+  margin-top: 70px;
+}
+.homePage .homeServices .rService .serviceDetail .serviceBox {
+  direction: rtl;
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+.homePage .homeServices .rService .serviceDetail .serviceBox img {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.homePage .homeServices .rService .serviceDetail .serviceBox .boxTxt h6 {
+  font-size: 16px;
+  font-family: "IRANSans";
+  font-weight: 600;
+  line-height: 24px;
+}
+.homePage .homeServices .rService .serviceDetail .serviceBox .boxTxt p {
+  font-family: "IRANSans";
+  font-weight: 300;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 24px;
+  margin-top: 8px;
+}
+.homePage .homeServices .rService .serviceDetail .serviceBox:nth-child(2) {
+  margin-top: 32px;
+}
+.homePage .homeServices .lService {
+  position: relative;
+  border: 14px solid #e8f4f8;
+  top: -40px;
+}
+.homePage .homeServices .lService img {
+  transform: translate(30px, 30px);
+}
+.homePage .newestArticle {
+  padding: 40px 89px 74px 89px;
+}
+.homePage .newestArticle .relatedBlogsTitle {
+  text-align: right;
+  position: relative;
+}
+.homePage .newestArticle .relatedBlogsTitle h4 {
+  font-family: "Anjoman";
+  font-weight: 400;
+  font-size: 22px;
+  text-align: right;
+}
+.homePage .newestArticle .relatedBlogsTitle h4 strong {
+  font-weight: 700;
+}
+.homePage .newestArticle .relatedBlogsTitle span {
+  position: absolute;
+  right: 0;
+  bottom: -21px;
+  background-color: #0081b3;
+  height: 2px;
+  width: 50px;
+}
+.homePage .newestArticle .relatedBlogs {
+  display: flex;
+  justify-content: end;
+  margin-top: 44px;
+  gap: 54.5px;
+}
+.homePage .newestArticle .relatedBlogs .blogItem .imgSec {
+  position: relative;
+}
+.homePage .newestArticle .relatedBlogs .blogItem .imgSec .blgDate {
+  position: absolute;
+  left: 0;
+  bottom: -34px;
+  direction: rtl;
+}
+.homePage .newestArticle .relatedBlogs .blogItem .imgSec .blgDate .blogDateTop {
+  padding: 9px 6px;
+  background-color: white;
+  text-align: center;
+}
+.homePage .newestArticle .relatedBlogs .blogItem .imgSec .blgDate .blogDateTop span {
+  font-family: "IranSansFaNum";
+  font-weight: 300;
+  font-size: 10px;
+  direction: rtl;
+  line-height: 15px;
+}
+.homePage .newestArticle .relatedBlogs .blogItem .imgSec .blgDate .blogDateBtm {
+  text-align: center;
+  padding: 9px 6px;
+  background-color: #0081b3;
+}
+.homePage .newestArticle .relatedBlogs .blogItem .imgSec .blgDate .blogDateBtm span {
+  font-family: "IranSansFaNum";
+  font-weight: 300;
+  font-size: 10px;
+  direction: rtl;
+  line-height: 15px;
+  color: white;
+}
+.homePage .newestArticle .relatedBlogs .blogItem .RelatedBlogDetail {
+  position: relative;
+}
+.homePage .newestArticle .relatedBlogs .blogItem .RelatedBlogDetail a {
+  text-decoration: none;
+  color: black;
+}
+.homePage .newestArticle .relatedBlogs .blogItem .RelatedBlogDetail a h6 {
+  direction: rtl;
+  font-family: "IranSansFaNum";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  padding: 12px 0 20px 0;
+}
+.homePage .newestArticle .relatedBlogs .blogItem .RelatedBlogDetail p {
+  text-align: right;
+  font-size: 12px;
+  font-family: "IranSansFaNum";
+  font-weight: 300;
+  width: 330px;
+  line-height: 17px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .boxCompetition {
+    width: 40% !important;
+  }
+}
 @media only screen and (max-width: 1290px) {
   .productList .productListContainer .proListItem {
     width: 30%;
