@@ -1063,6 +1063,14 @@ footer .copyRight .copyTxt h4 {
 .contactUs .contactContainer .contactDetail {
   text-align: right;
 }
+.contactUs .contactContainer .contactDetail .workingHour p:nth-child(1) {
+  font-family: "IRANSans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  direction: rtl;
+  margin-top: 18px;
+}
 .contactUs .contactContainer .contactDetail h2 {
   font-size: 18px;
   line-height: 29.74px;
@@ -1093,6 +1101,33 @@ footer .copyRight .copyTxt h4 {
 
 .homePage .relatedProTitle h4 {
   font-size: 22px !important;
+}
+.homePage .productSlider .relatedProTitle {
+  direction: rtl;
+  display: flex;
+  padding-left: 90px;
+  align-items: center;
+  justify-content: space-between;
+}
+.homePage .productSlider .relatedProTitle a {
+  color: black;
+  font-family: "IRANSans";
+  font-weight: 300;
+  font-size: 12px;
+  text-underline-offset: 18px;
+}
+.homePage .relatedBlogsTitle {
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.homePage .relatedBlogsTitle a {
+  color: black;
+  font-family: "IRANSans";
+  font-weight: 300;
+  font-size: 12px;
+  text-underline-offset: 18px;
 }
 .homePage .slideSection {
   height: 100vh;
@@ -1324,41 +1359,66 @@ footer .copyRight .copyTxt h4 {
   width: 50px;
 }
 .homePage .aboutHome {
-  overflow-x: hidden;
-  padding: 120px 89px;
-  display: grid;
-  grid-template-areas: "a a b b" "c d b b" "c e e e";
-  gap: 55px;
+  overflow: hidden;
+  margin: 120px 0;
+  position: relative;
 }
-.homePage .aboutHome .aboutTxt {
-  direction: rtl;
+.homePage .aboutHome .aboutContainer {
+  display: flex;
+  flex-wrap: wrap;
 }
-.homePage .aboutHome .aboutTxt p {
+.homePage .aboutHome .aboutContainer .aboutTxt {
+  position: absolute;
+  width: 49%;
+  left: 12%;
+  z-index: 1;
+  max-width: 700px;
+  z-index: 1;
+}
+.homePage .aboutHome .aboutContainer .aboutTxt .relatedProTitle {
+  margin-bottom: 32px;
+}
+.homePage .aboutHome .aboutContainer .aboutTxt p {
   font-family: "IRANSans";
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  margin-top: 50px;
   text-align: justify;
+  direction: rtl;
 }
-.homePage .aboutHome img {
-  height: -moz-fit-content;
-  height: fit-content;
+.homePage .aboutHome .aboutContainer .imgContainer {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
 }
-.homePage .aboutHome .grid:nth-child(1) {
-  grid-area: a;
+.homePage .aboutHome .aboutContainer .imgContainer .innerDiv {
+  padding-left: 48%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
-.homePage .aboutHome .grid:nth-child(2) {
-  grid-area: b;
+.homePage .aboutHome .aboutContainer .imgContainer .innerDiv .imgScroll:nth-child(1) {
+  position: absolute;
+  left: 11%;
+  bottom: 15%;
+  width: 48%;
+  padding-left: 0;
+  display: inline-block;
+  padding: 15px;
 }
-.homePage .aboutHome .grid:nth-child(3) {
-  grid-area: c;
+.homePage .aboutHome .aboutContainer .imgContainer .innerDiv .imgScroll:nth-child(4) {
+  margin-top: 10px;
 }
-.homePage .aboutHome .grid:nth-child(4) {
-  grid-area: d;
+.homePage .aboutHome .aboutContainer .imgContainer .innerDiv .imgScroll:nth-child(2),
+.homePage .aboutHome .aboutContainer .imgContainer .innerDiv .imgScroll:nth-child(4) {
+  display: inline-block;
+  padding: 15px;
 }
-.homePage .aboutHome .grid:nth-child(5) {
-  grid-area: e;
+.homePage .aboutHome .aboutContainer .imgContainer .innerDiv .imgScroll:nth-child(3) {
+  padding-right: 0;
+  margin-left: 5%;
 }
 .homePage .homeCompetition {
   display: flex;
@@ -1384,11 +1444,6 @@ footer .copyRight .copyTxt h4 {
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
-}
-.homePage .homeCompetition .boxContainer .boxCompetition .imgContainer {
-  background-color: rgba(124, 30, 53, 0.2509803922);
-  padding: 11.5px;
-  border-radius: 50%;
 }
 .homePage .homeCompetition .boxContainer .boxCompetition h4 {
   font-family: "IRANSans";
@@ -1542,9 +1597,13 @@ footer .copyRight .copyTxt h4 {
 }
 .homePage .newestArticle .relatedBlogs {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   margin-top: 44px;
-  gap: 54.5px;
+  gap: 24px;
+}
+.homePage .newestArticle .relatedBlogs .blogItem {
+  width: -moz-min-content;
+  width: min-content;
 }
 .homePage .newestArticle .relatedBlogs .blogItem .imgSec {
   position: relative;
@@ -1600,7 +1659,7 @@ footer .copyRight .copyTxt h4 {
   font-size: 12px;
   font-family: "IranSansFaNum";
   font-weight: 300;
-  width: 330px;
+  min-width: 350px;
   line-height: 17px;
 }
 

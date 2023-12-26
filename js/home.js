@@ -34,57 +34,44 @@ proHoverItems.forEach(pro=>{
 // SCROLL ANIMATION
 
 
-// let aboutHome = document.querySelectorAll('.aboutHome');
-
-
-// const observerRightOptions = {
-//   root: null,
-//   rootMargin: "0px",
-//   threshold: 0.3
-// };
-
-// function observerRightCallback(entries) {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       console.log(entry);
-//     }
-//     // Add the else if you want to fade out images out of the viewport
-
-//   });
-// }
-
-// const rightObserver = new IntersectionObserver(observerRightCallback, observerRightOptions);
-
-// aboutHome.forEach((el) => rightObserver.observe(el));
-
 gsap.registerPlugin(ScrollTrigger);
 
-/*  SCENE 1 */
-// let scene1 = gsap.timeline();
-// ScrollTrigger.create({
-//     animation: scene1,
-//     trigger: ".aboutHome",
-//     start: "top top",
-//     end: "end end",
-//     scrub: 3,
-//     markers : true,
-// });
+let parallaxLeft = gsap.timeline();
+parallaxLeft.to('.rightScroll' , {
+    x : "15vw"
+})
+ScrollTrigger.create({
+    animation:parallaxLeft , 
+    trigger : ".aboutHome",
+    start:"top 0%",
+    end:"bottom 0%",
+    scrub : 0.5,
+
+})
+
+let parallaxRight = gsap.timeline();
+parallaxRight.to('.leftScroll' , {
+    x : "-15vw"
+})
+ScrollTrigger.create({
+    animation:parallaxRight , 
+    trigger : ".aboutHome",
+    start:"top 0%",
+    end:"bottom 0%",
+    scrub : 0.5,
+
+})
 
 
-// scene1.to(".move", { y: 0, x: 100, scale: 0.9, ease: "power1.in" }, 0)
+let slowScroll = gsap.timeline();
+slowScroll.to('.slowScroll' , {
+    x : "-7vw"
+})
+ScrollTrigger.create({
+    animation:slowScroll , 
+    trigger : ".aboutHome",
+    start:"top 0%",
+    end:"bottom 0%",
+    scrub : 0.5,
 
-
-
-
-const tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".aboutHome",
-        start: "top top",
-        end: "end",
-        pin: true,
-        scrub: 4,
-        markers:true,
-    }
-});
-
-tl.to(".move", { x:200, duration: 2 , ease: "power1.in" });
+})
