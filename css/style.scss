@@ -916,16 +916,17 @@ footer {
   }
   .section9 {
     padding: 40px 89px 74px 89px;
+    overflow: hidden;
     .relatedBlogsTitle {
       text-align: right;
       position: relative;
       h4 {
         font-family: "Anjoman";
-        font-weight: 400;
         font-size: 18px;
         text-align: right;
-        strong {
-          font-weight: 700;
+        font-weight: 700;
+        .word:first-child {
+          font-weight: 400;
         }
       }
 
@@ -999,6 +1000,7 @@ footer {
             font-weight: 300;
             width: 330px;
             line-height: 17px;
+            direction: rtl;
           }
         }
       }
@@ -1073,6 +1075,10 @@ footer {
 
     .imgSec {
       width: min-content;
+      img{
+        position: relative;
+        right: -15vw;
+      }
       p {
         width: fit-content;
         margin-top: 36px;
@@ -1111,11 +1117,14 @@ footer {
         position: relative;
         h4 {
           font-family: "Anjoman";
-          font-weight: 400;
           font-size: 18px;
           text-align: right;
-          strong {
-            font-weight: 700;
+          direction: rtl;
+          // color: white;
+          font-weight: 700;
+          .word:first-child{
+            color: #2F2F2F;
+            font-weight: 400;
           }
         }
         span {
@@ -1127,10 +1136,10 @@ footer {
           width: 50px;
         }
       }
-      p:first-of-type {
+      &>p:first-of-type {
         margin: 33px 0;
       }
-      p {
+      &>p {
         font-family: "IRANSans";
         font-weight: 400;
         font-size: 14px;
@@ -1145,6 +1154,7 @@ footer {
         font-size: 14px;
         line-height: 24px;
         text-align: left;
+        
       }
     }
     .services {
@@ -1164,13 +1174,16 @@ footer {
           position: relative;
           h4 {
             font-family: "Anjoman";
-            font-weight: 400;
             font-size: 18px;
-            color: #c9c9c9;
+            font-weight: 700;
             text-align: right;
-            strong {
-              color: white;
-              font-weight: 700;
+            color: white;
+            direction: rtl;
+            font-weight: 700;
+            .word:first-child{
+              color: #c9c9c9;
+              font-weight: 400;
+              
             }
           }
           span {
@@ -1259,6 +1272,7 @@ footer {
   .relatedProTitle {
     h4 {
       font-size: 22px !important;
+      direction: rtl;
     }
   }
   .productSlider {
@@ -1514,11 +1528,11 @@ footer {
     position: relative;
     h4 {
       font-family: "Anjoman";
-      font-weight: 400;
       text-align: right;
       font-size: 18px;
-      strong {
-        font-weight: 700;
+      font-weight: 700;
+      .word:first-child {
+        font-weight: 400;
       }
     }
     span {
@@ -1761,11 +1775,11 @@ footer {
       position: relative;
       h4 {
         font-family: "Anjoman";
-        font-weight: 400;
         font-size: 22px;
+        font-weight: 700;
         text-align: right;
-        strong {
-          font-weight: 700;
+        .word:first-child {
+          font-weight: 400;
         }
       }
 
@@ -1845,6 +1859,14 @@ footer {
       }
     }
   }
+}
+.lodingHide{
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+.loadedShow{
+  opacity: 1;
+  transition: 0.5s ease-out;
 }
 
 @media only screen and (max-width: 1350px) {

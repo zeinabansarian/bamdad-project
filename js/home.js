@@ -75,3 +75,6 @@ ScrollTrigger.create({
     scrub : 0.5,
 
 })
+
+const text = new SplitType('.relatedProTitle h4', { types: 'words' })
+const textBlog = new SplitType('.relatedBlogsTitle h4', { types: 'words' })

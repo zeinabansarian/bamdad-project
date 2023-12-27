@@ -764,6 +764,7 @@ footer .copyRight .copyTxt h4 {
 }
 .article .section9 {
   padding: 40px 89px 74px 89px;
+  overflow: hidden;
 }
 .article .section9 .relatedBlogsTitle {
   text-align: right;
@@ -771,12 +772,12 @@ footer .copyRight .copyTxt h4 {
 }
 .article .section9 .relatedBlogsTitle h4 {
   font-family: "Anjoman";
-  font-weight: 400;
   font-size: 18px;
   text-align: right;
-}
-.article .section9 .relatedBlogsTitle h4 strong {
   font-weight: 700;
+}
+.article .section9 .relatedBlogsTitle h4 .word:first-child {
+  font-weight: 400;
 }
 .article .section9 .relatedBlogsTitle span {
   position: absolute;
@@ -848,6 +849,7 @@ footer .copyRight .copyTxt h4 {
   font-weight: 300;
   width: 330px;
   line-height: 17px;
+  direction: rtl;
 }
 
 .loadingTop {
@@ -924,6 +926,10 @@ footer .copyRight .copyTxt h4 {
   width: -moz-min-content;
   width: min-content;
 }
+.about-us .section1 .imgSec img {
+  position: relative;
+  right: -15vw;
+}
 .about-us .section1 .imgSec p {
   width: -moz-fit-content;
   width: fit-content;
@@ -964,12 +970,14 @@ footer .copyRight .copyTxt h4 {
 }
 .about-us .section2 .message .mTitle h4 {
   font-family: "Anjoman";
-  font-weight: 400;
   font-size: 18px;
   text-align: right;
-}
-.about-us .section2 .message .mTitle h4 strong {
+  direction: rtl;
   font-weight: 700;
+}
+.about-us .section2 .message .mTitle h4 .word:first-child {
+  color: #2F2F2F;
+  font-weight: 400;
 }
 .about-us .section2 .message .mTitle span {
   position: absolute;
@@ -979,10 +987,10 @@ footer .copyRight .copyTxt h4 {
   height: 2px;
   width: 50px;
 }
-.about-us .section2 .message p:first-of-type {
+.about-us .section2 .message > p:first-of-type {
   margin: 33px 0;
 }
-.about-us .section2 .message p {
+.about-us .section2 .message > p {
   font-family: "IRANSans";
   font-weight: 400;
   font-size: 14px;
@@ -1017,14 +1025,16 @@ footer .copyRight .copyTxt h4 {
 }
 .about-us .section2 .services .servicesTxt .mTitle h4 {
   font-family: "Anjoman";
-  font-weight: 400;
   font-size: 18px;
-  color: #c9c9c9;
-  text-align: right;
-}
-.about-us .section2 .services .servicesTxt .mTitle h4 strong {
-  color: white;
   font-weight: 700;
+  text-align: right;
+  color: white;
+  direction: rtl;
+  font-weight: 700;
+}
+.about-us .section2 .services .servicesTxt .mTitle h4 .word:first-child {
+  color: #c9c9c9;
+  font-weight: 400;
 }
 .about-us .section2 .services .servicesTxt .mTitle span {
   position: absolute;
@@ -1101,6 +1111,7 @@ footer .copyRight .copyTxt h4 {
 
 .homePage .relatedProTitle h4 {
   font-size: 22px !important;
+  direction: rtl;
 }
 .homePage .productSlider .relatedProTitle {
   direction: rtl;
@@ -1343,12 +1354,12 @@ footer .copyRight .copyTxt h4 {
 }
 .homePage .relatedProTitle h4 {
   font-family: "Anjoman";
-  font-weight: 400;
   text-align: right;
   font-size: 18px;
-}
-.homePage .relatedProTitle h4 strong {
   font-weight: 700;
+}
+.homePage .relatedProTitle h4 .word:first-child {
+  font-weight: 400;
 }
 .homePage .relatedProTitle span {
   position: absolute;
@@ -1580,12 +1591,12 @@ footer .copyRight .copyTxt h4 {
 }
 .homePage .newestArticle .relatedBlogsTitle h4 {
   font-family: "Anjoman";
-  font-weight: 400;
   font-size: 22px;
+  font-weight: 700;
   text-align: right;
 }
-.homePage .newestArticle .relatedBlogsTitle h4 strong {
-  font-weight: 700;
+.homePage .newestArticle .relatedBlogsTitle h4 .word:first-child {
+  font-weight: 400;
 }
 .homePage .newestArticle .relatedBlogsTitle span {
   position: absolute;
@@ -1661,6 +1672,16 @@ footer .copyRight .copyTxt h4 {
   font-weight: 300;
   min-width: 350px;
   line-height: 17px;
+}
+
+.lodingHide {
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+
+.loadedShow {
+  opacity: 1;
+  transition: 0.5s ease-out;
 }
 
 @media only screen and (max-width: 1350px) {
