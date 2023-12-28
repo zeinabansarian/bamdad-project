@@ -1729,11 +1729,15 @@ footer .copyRight .copyTxt h4 {
   border-bottom: 1px solid #b0b0b0;
 }
 .product .section2 .productDetailSection .productDetailTable table tr td {
+  line-height: 24px;
   padding: 15px;
   border-left: 1px solid #b0b0b0;
   font-family: "IRANSans";
   font-weight: 300;
   font-size: 16px;
+}
+.product .section2 .productDetailSection .productDetailTable table tr td:first-of-type {
+  white-space: nowrap;
 }
 .product .section2 .productDetailSection .productDetailTable table tr td:last-of-type {
   border-left: none;
@@ -1829,11 +1833,6 @@ footer .copyRight .copyTxt h4 {
   line-height: 24px;
   text-align: right;
   color: black;
-  margin-bottom: 29px;
-}
-.product .section3 .tab-content .tab-pane .productTabDescription video {
-  display: flex;
-  margin: 0 auto;
   margin-bottom: 29px;
 }
 .product .section3 .tab-content .tab-pane .commentSection .commentItem {
@@ -2040,6 +2039,25 @@ footer .copyRight .copyTxt h4 {
   font-size: 19px;
   margin-right: 27px;
 }
+.product .section3 .video {
+  position: relative;
+  margin-bottom: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product .section3 .video > img {
+  position: absolute;
+  z-index: 100;
+}
+.product .section3 .video video {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 630px;
+}
+.product .section3 .description:nth-of-type(2) {
+  display: none;
+}
 .product .section4 {
   padding: 0 90px;
   margin: 110px 0 90px 0;
@@ -2113,6 +2131,15 @@ footer .copyRight .copyTxt h4 {
   line-height: 21px;
   font-size: 14px;
   text-decoration: none;
+}
+
+.pause {
+  opacity: 1;
+}
+
+.play {
+  opacity: 0;
+  display: none;
 }
 
 @media only screen and (min-width: 2000px) {

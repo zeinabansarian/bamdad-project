@@ -2104,13 +2104,16 @@ footer {
             border-bottom: 1px solid #b0b0b0;
 
             td {
+              line-height: 24px;
               padding: 15px;
               border-left: 1px solid #b0b0b0;
               font-family: "IRANSans";
               font-weight: 300;
               font-size: 16px;
             }
-
+            td:first-of-type{
+              white-space: nowrap;
+            }
             td:last-of-type {
               border-left: none;
             }
@@ -2222,13 +2225,8 @@ footer {
             color: black;
             margin-bottom: 29px;
           }
-
-          video {
-            display: flex;
-            margin: 0 auto;
-            margin-bottom: 29px;
-          }
         }
+        
 
         .commentSection {
           .commentItem {
@@ -2458,6 +2456,27 @@ footer {
         }
       }
     }
+    .video{
+      position: relative;
+      margin-bottom: 29px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &>img{
+        position: absolute;
+        z-index: 100;
+      }
+      video {
+        // display: flex;
+        object-fit: contain;
+        width: 630px;
+      }
+    }
+
+    .description:nth-of-type(2){
+      display: none;
+    }
   }
 
   .section4 {
@@ -2547,7 +2566,13 @@ footer {
     }
   }
 }
-
+.pause {
+  opacity: 1;
+}
+.play {
+  opacity: 0;
+  display: none;
+}
 @media only screen and (min-width: 2000px) {
   .product {
     .section2 {

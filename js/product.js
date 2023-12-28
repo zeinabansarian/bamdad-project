@@ -1,8 +1,6 @@
-$(".card").swipe( {
-    swipeLeft:function(event, direction, distance, duration, fingerCount) {
-         $(".nav-tabs li.active").next('li').find('a').tab('show');
-       },
-    swipeRight:function(event, direction, distance, duration, fingerCount) {
-         $(".nav-tabs li.active").prev('li').find('a').tab('show');
-       },
- });
+
+
+
+ let description = document.querySelectorAll('.description')
+let box2 = document.querySelector('.box2')
+ box2.innerHTML = description[1].innerHTML
