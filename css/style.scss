@@ -2697,6 +2697,136 @@ footer {
   }
 }
 
+.form{
+  form{
+    padding: 122px 103px 88px 103px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 24px;
+    direction: rtl;
+    justify-content: space-between;
+    select{
+      width: 47%;
+      font-family: "IRANSans";
+      font-size: 16px;
+      font-weight: 400;
+      padding: 10px;
+      border: none;
+      border-bottom: 1px solid black;
+    }
+    &>input {
+      width: 45%;
+      font-family: "IRANSans";
+      font-size: 16px;
+      font-weight: 400;
+      padding: 10px;
+      text-align: right;
+      border: none;
+      border-bottom: 1px solid black;
+    }
+    &>input::placeholder{
+      color: black;
+
+    }
+    .title{
+      
+      width: 100%;
+      display: flex;
+      margin: 32px 0 20px 0;
+      align-items: center;
+      span{
+        width: 100%;
+        background-color: #D1D1D1;
+        height: 1px;
+        margin-right: 15px;
+      }
+    }
+    h2{
+      white-space: nowrap;
+      position: relative;
+      padding-right: 2%;
+      font-size: 16px;
+      font-family: "IRANSans";
+      font-weight: 700;
+    }
+    h2::before{
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 1px;
+      background-color: #D1D1D1;
+      right: 0;
+      top: 50%;
+    }
+    .excell , .internet , .word {
+      width: 100%;
+      h4{
+        font-weight: 400;
+        font-size: 16px;
+        color: black;
+        font-family: "IranSansFaNum";
+        margin-bottom: 16px;
+      }
+      label{
+        font-family: "IRANSans";
+        font-weight: 400;
+        font-size: 14px;
+        vertical-align: text-top;
+      }
+    }
+    .employed{
+      width: 100%;
+      &>input {
+        width: 525px;
+        font-family: "IRANSans";
+        font-size: 14px;
+        font-weight: 400;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid black;
+        margin-right: 16px;
+        text-align: right;
+      }
+      &>input::placeholder{
+        color: black;
+      }
+      label{
+        font-family: "IRANSans";
+        font-weight: 400;
+        font-size: 14px;
+        vertical-align: text-top;
+      }
+      h4{
+        font-family: "IranSansFaNum";
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 5px;
+        display: inline-block;
+      }
+      .radios{
+        margin-top: 20px;
+        display: block;
+      }
+    }
+    .capcha{
+      display: flex;
+      width: 100%;
+      justify-content: end;
+      column-gap: 35px;
+      button{
+        background-color: #0081B3;
+        cursor: pointer;
+        padding: 12px 78px 12px 78px;
+        font-size: 19px;
+        font-family: "IRANSans";
+        font-weight: 300;
+        color: white;
+        border: none;
+      }
+    }
+  }
+}
 @media only screen and (min-width: 2000px) {
   .product {
     .section2 {
