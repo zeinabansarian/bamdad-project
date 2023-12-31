@@ -472,6 +472,41 @@ header {
             top: 0;
           }
         }
+        .openChemic{
+          background-color: #F6F6F6;
+          padding: 15px 25px;
+          position: absolute;
+          top: 17px;
+          width: max-content;
+          right: -50%;
+          li{
+            list-style: none;
+            padding: 10px ;
+            margin-bottom: 10px 20px;
+          }
+          li:hover {
+            background-color: white;
+
+            a {
+              font-weight: 700;
+            }
+
+            .megaOpenItems ul {
+              opacity: 1;
+              transition: 0.3s ease-in-out;
+            }
+          }
+          a{
+            text-decoration: none;
+                        color: black;
+                        font-family: "IRANSans";
+                        font-weight: 400;
+                        font-size: 14px;
+                        display: flex;
+                        align-items: center;
+                        line-height: 23.74px;
+          }
+        }
       }
 
       &>li:hover .openMega {
@@ -1082,6 +1117,7 @@ footer {
 
 .productList {
   .productListContainer {
+    justify-content: center;
     padding: 100px 90px;
     display: flex;
     gap: 24px;
@@ -1412,7 +1448,9 @@ footer {
         position: absolute;
         top: 40vh;
         z-index: 100;
-
+        p{
+          display: none;
+        }
         h1 {
           font-family: "Anjoman";
           font-weight: 900;

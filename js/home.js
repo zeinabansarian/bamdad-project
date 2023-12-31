@@ -78,3 +78,40 @@ ScrollTrigger.create({
 
 const text = new SplitType('.relatedProTitle h4', { types: 'words' })
 const textBlog = new SplitType('.relatedBlogsTitle h4', { types: 'words' })
+
+
+
+
+
+
+
+
+let number = 0;
+
+//شروع افکت تایپ متن
+
+let start = setInterval( 
+  
+effect
+,
+//سرعت تایپ بر میلی ثانیه
+55
+);
+
+function effect(){
+
+//انتخاب کردن تگ مورد نظر
+ let result = document.querySelector(".homePage .defaultTitle h1");
+ let text = document.querySelector(".homePage .defaultTitle p").innerHTML;
+ 
+// متن
+ //اضافه کردن حروف ها به هم دیگه
+ number +=  + 1;
+ 
+ //نمایش نتیجه
+ result.innerHTML = text.substr(0,number);
+  //برای اینکه کاربر بتونه راحت متن رو انتخاب کنه و به مشکل بر نخوره
+  if(number > text.length) {
+    clearInterval(start);
+  }
+}

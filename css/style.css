@@ -373,6 +373,40 @@ header .menu-items > ul > li .openMega .megaItems::after {
   left: 0;
   top: 0;
 }
+header .menu-items > ul > li .openChemic {
+  background-color: #F6F6F6;
+  padding: 15px 25px;
+  position: absolute;
+  top: 17px;
+  width: -moz-max-content;
+  width: max-content;
+  right: -50%;
+}
+header .menu-items > ul > li .openChemic li {
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 10px 20px;
+}
+header .menu-items > ul > li .openChemic li:hover {
+  background-color: white;
+}
+header .menu-items > ul > li .openChemic li:hover a {
+  font-weight: 700;
+}
+header .menu-items > ul > li .openChemic li:hover .megaOpenItems ul {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+header .menu-items > ul > li .openChemic a {
+  text-decoration: none;
+  color: black;
+  font-family: "IRANSans";
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  line-height: 23.74px;
+}
 header .menu-items > ul > li:hover .openMega {
   transform: scaleY(1);
   transform-origin: top;
@@ -892,6 +926,7 @@ footer .copyRight .copyTxt h4 {
 }
 
 .productList .productListContainer {
+  justify-content: center;
   padding: 100px 90px;
   display: flex;
   gap: 24px;
@@ -1172,6 +1207,9 @@ footer .copyRight .copyTxt h4 {
   position: absolute;
   top: 40vh;
   z-index: 100;
+}
+.homePage .slideSection .defaultSlide .defaultTitle p {
+  display: none;
 }
 .homePage .slideSection .defaultSlide .defaultTitle h1 {
   font-family: "Anjoman";

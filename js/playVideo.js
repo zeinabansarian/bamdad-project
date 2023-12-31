@@ -1,5 +1,5 @@
-let videoCtrl = document.querySelector('.video video')
-let playBtn = document.querySelector('.video .playbtn')
+let videoCtrl = document.querySelector(' video')
+let playBtn = document.querySelector(' .playbtn')
 console.log(playBtn);
 function playPause() {
         console.log("pause");
